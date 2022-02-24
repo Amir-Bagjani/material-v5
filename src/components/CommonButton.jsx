@@ -1,15 +1,9 @@
 import { Button } from "@mui/material"
 
-const CommonButton = ({ children, color, size, variant, sx, disabled}) => {
+const CommonButton = ({ children, ...rest}) => {
   return (
-    <Button
-        color={color}
-        size={size}
-        variant={variant}
-        sx={sx}
-        disabled={disabled}
-    >
-        {children}
+    <Button {...rest} >
+      {children}
     </Button>
   )
 }

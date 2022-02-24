@@ -9,22 +9,16 @@ import ListItemText from '@mui/material/ListItemText';
 import { useNavigate } from 'react-router-dom'
 
 import { mainNavbarItems } from './consts/navbarItems';
+
+import { navbarStyles } from './navbarStyles';
+
 const drawerWidth = 240;
 
 const Navbar = () => {
     const navigate = useNavigate()
   return (
     <Drawer
-    sx={{
-      width: drawerWidth,
-      flexShrink: 0,
-      '& .MuiDrawer-paper': {
-        width: drawerWidth,
-        boxSizing: 'border-box',
-        backgroundColor: `#101F33`,
-        color: `rgba(255,255,255,0.7)`
-      },
-    }}
+    sx={navbarStyles.drawer}
     variant="permanent"
     anchor="left"
   >
@@ -37,10 +31,13 @@ const Navbar = () => {
          button
          key={i.id}
          >
-          <ListItemIcon sx={{color: `rgba(255,255,255,0.7)`}}>
+          <ListItemIcon sx={navbarStyles.icons}>
             {i.icon}
           </ListItemIcon>
-          <ListItemText primary={i.label} />
+          <ListItemText
+           primary={i.label}
+           sx={navbarStyles.text}
+          />
         </ListItem>
       ))}
     </List>
