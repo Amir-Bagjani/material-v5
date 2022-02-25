@@ -1,39 +1,13 @@
-import Grid from '@mui/material/Grid';
-import CommonButton from '../../components/CommonButton'
+import { Grid } from "@mui/material";
+import Header from "../../components/Header";
 
-const buttonStyles = {
-    fontSize: '0.875rem',
-    fontWeight: 600,
-    textTransform: 'capitalize',
-    borderRadius: 2.5,
-    '&.MuiButton-contained': {
-        backgroundColor: '#009be5',
-        '&:hover': {
-            backgroundColor: '#006db3'
-        },
-    },
-    '&.MuiButton-outlined': {
-        color: "#009be5",
-        borderColor: '#009be5',
-        '&:hover': {
-            backgroundColor: 'transparent'
-        },
-    },
-};
 
 const Authentication = () => {
+  return (
+    // <Grid item sx={{width: `100%`}}  >
+    <Grid item xs={8}  >
+    </Grid>
+  );
+};
 
-    return (
-        <Grid item xs={8}>
-            This is authentication page.
-            <CommonButton size='large' variant='contained' sx={buttonStyles}>
-                Add user
-            </CommonButton>
-            <CommonButton size='large' variant='outlined' sx={buttonStyles} >
-                Text
-            </CommonButton>
-        </Grid>
-    )
-}
-
-export default Authentication
+export default Authentication;
