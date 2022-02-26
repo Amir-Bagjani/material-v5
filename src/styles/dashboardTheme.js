@@ -15,6 +15,10 @@ export const dashboardTheme = createTheme({
                             backgroundColor: '#006db3'
                         },
                     },
+                    "&.Mui-disabled": {
+                        backgroundColor:  'lightgray',
+                        color: `gray`
+                    },
                     '&.MuiButton-outlined': {
                         color: "#fff",
                         borderColor: 'rgba(255, 255, 255, 0.7)',
