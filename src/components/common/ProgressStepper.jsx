@@ -30,10 +30,6 @@ const ProgressStepper = ({ steps, stepDescription }) => {
   };
 
 
-  useEffect(() => {
-    console.log(completed);
-  }, [completed]);
-
   const handleReset = () => {
     setCompleted({});
     setActiveSteps(0);
