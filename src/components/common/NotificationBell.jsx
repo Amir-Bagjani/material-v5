@@ -1,6 +1,6 @@
 import React from "react";
 import { Notifications } from "@mui/icons-material";
-import { Badge, Box, IconButton, Tooltip } from "@mui/material";
+import { Badge, IconButton, Tooltip } from "@mui/material";
 import CommonMenu from "./CommonMenu";
 
 const NotificationBell = ({ iconColor }) => {

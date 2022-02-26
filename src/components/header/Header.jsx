@@ -1,7 +1,7 @@
-import CommonButton from "./CommonButton";
-import NotificationBell from "./NotificationBell";
+import CommonButton from "../common/CommonButton";
 import { Avatar, Box, IconButton, Tooltip, Typography } from "@mui/material";
 import HelpOutlinedIcon from "@mui/icons-material/HelpOutlined";
+import NotificationBell from "../common/NotificationBell";
 
 const headerStyles = {
     wrapper: {

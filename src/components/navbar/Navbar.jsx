@@ -8,7 +8,7 @@ import ListItemText from '@mui/material/ListItemText';
 
 import { useNavigate } from 'react-router-dom'
 
-import { mainNavbarItems } from './consts/navbarItems';
+import { mainNavbarItems } from "../../consts/navbarItems"
 
 const navbarStyles = {
   drawer: {
@@ -31,7 +31,7 @@ const navbarStyles = {
   text: {
       '& span': {
           marginLeft: '-10px',
-          fontWeight: '600',
+          fontWeight: 600,
           fontSize: '16px',
       }
   }
